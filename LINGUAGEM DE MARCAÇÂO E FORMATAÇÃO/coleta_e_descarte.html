@@ -3,9 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LimpaIbura - Coleta e descarte</title>
 </head>
 <body>
-    
+    <header>
+        <div class="g-01_header">
+            <div class="g-01_header-icon">
+                <img class="g-01_header-icon-img" src="img/icon_local.png" alt="">
+            </div>
+            <div class="g-01_header-text">
+                <h1 class="h1_header-text">LimpaIbura</h1>
+                <p class="p_header-text">CUIDADO QUE COMEÇA AQUI</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="g-02_header">
+                <li class="g-02_header-navegacao"><a href="index.html">Início</a></li>
+                <li class="g-02_header-navegacao"><a href="ocorrencias.html">Ocorrências</a></li>
+                <li class="g-02_header-navegacao-ativo"><a href="coleta_e_descarte.html">Coleta e descarte</a></li>
+            </ul>
+        </nav>
+
+        <div class="g-03_header-botao">
+            <a href="login.html" class="g-03_header-botao-entrar" type="button">Entrar</a>
+            <button class="g-03_header-botao-fazerdenuncia" type="button">Fazer denúncia</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="g-17_titulo">
+            <p class="g-17_titulo-caminho">Início / Coleta e descarte</p>
+            <h1 class="g-17_titulo-h1">O destino certo começa com informação.</h1>
+            <p class="g-17_titulo-texto">Saiba quando colocar o lixo na rua e como encaminhar cada tipo de resíduo.</p>
+            <div class="g-17_titulo-info">
+                <p class="g-17_titulo-selo">ACESSO SEM LOGIN</p>
+                <p class="g-17_titulo-info-texto">Informação para cuidar de todo o bairro.</p>
+            </div>
+        </section>
+
+        <!-- CONSULTAR COLETA -->
+        <section class="g-18_consulta">
+            <div class="g-18_busca-card">
+                <div class="g-18_busca-titulo-linha">
+                    <img class="g-18_busca-titulo-icone" src="img/icon_calendario.png" alt="">
+                    <h2 class="g-18_busca-titulo">Quando a coleta passa na sua rua?</h2>
+                </div>
+                <p class="g-18_busca-texto">Busque pelo nome da rua ou pela localidade no Ibura.</p>
+                <p class="g-18_busca-label">Rua ou localidade</p>
+                <div class="g-18_busca-linha">
+                    <div class="g-18_busca-caixa">
+                        <img class="g-18_busca-caixa-icone" src="img/icon_lupa.png" alt="">
+                        <input class="g-18_busca-caixa-input" type="search" placeholder="Digite sua rua ou localidade">
+                    </div>
+                    <button class="g-18_busca-botao" type="button">Consultar coleta<img class="g-18_busca-botao-seta" src="img/icon_seta-direita.png" alt=""></button>
+                </div>
+                <p class="g-18_busca-exemplos">Exemplos: Rua Rio Tapado · Rua Rio Prado · Três Carneiros</p>
+                <div class="g-18_busca-aviso">
+                    <img class="g-18_busca-aviso-icone" src="img/icon_info.png" alt="">
+                    <div>
+                        <p class="g-18_busca-aviso-texto">Os dias, horários e a data de atualização aparecerão após a consulta.</p>
+                        <p class="g-18_busca-aviso-texto">Nesta apresentação, as rotas oficiais ainda não estão disponíveis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-18_cuidados-card">
+                <p class="g-18_cuidados-label">PEQUENOS CUIDADOS</p>
+                <h2 class="g-18_cuidados-titulo">A coleta começa em casa.</h2>
+                <div class="g-18_cuidados-lista">
+                    <div class="g-18_cuidado">
+                        <img class="g-18_cuidado-icone" src="img/icon_certo.png" alt="">
+                        <div>
+                            <p class="g-18_cuidado-titulo">Embale bem os resíduos</p>
+                            <p class="g-18_cuidado-texto">Use sacos resistentes e bem fechados.</p>
+                        </div>
+                    </div>
+                    <div class="g-18_cuidado">
+                        <img class="g-18_cuidado-icone" src="img/icon_certo.png" alt="">
+                        <div>
+                            <p class="g-18_cuidado-titulo">Proteja quem faz a coleta</p>
+                            <p class="g-18_cuidado-texto">Embale e identifique objetos cortantes.</p>
+                        </div>
+                    </div>
+                    <div class="g-18_cuidado">
+                        <img class="g-18_cuidado-icone" src="img/icon_certo.png" alt="">
+                        <div>
+                            <p class="g-18_cuidado-titulo">Respeite o dia e o horário</p>
+                            <p class="g-18_cuidado-texto">Evite deixar sacos expostos na calçada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PONTOS DE DESCARTE -->
+        <section class="g-19_pontos">
+            <p class="g-19_pontos-eyebrow">PONTOS DE DESCARTE</p>
+            <h2 class="g-19_pontos-titulo">Um lugar certo para o que não vai na coleta.</h2>
+            <p class="g-19_pontos-texto">Encontre um ponto no bairro e confira as condições de entrega antes de sair.</p>
+
+            <div class="g-19_filtro">
+                <div class="g-19_filtro-esquerda">
+                    <p class="g-19_filtro-label">Filtrar por resíduo</p>
+                    <button class="g-19_chip-ativo" type="button">Todos</button>
+                    <button class="g-19_chip" type="button">Entulho</button>
+                    <button class="g-19_chip" type="button">Volumosos</button>
+                    <button class="g-19_chip" type="button">Recicláveis</button>
+                </div>
+                <p class="g-19_filtro-total">1 ponto apresentado</p>
+            </div>
+
+            <div class="g-19_cards">
+                <div class="g-19_ponto">
+                    <p class="g-19_ponto-label">ECOESTAÇÃO</p>
+                    <h3 class="g-19_ponto-titulo">EcoEstação Ibura</h3>
+                    <p class="g-19_ponto-endereco">Rua Rio Tapado · Ibura, Recife / PE</p>
+                    <p class="g-19_ponto-antes">Antes de ir</p>
+                    <p class="g-19_ponto-texto">Confirme os materiais aceitos, os limites de entrega e os<br>horários de funcionamento nos canais oficiais da Emlurb.</p>
+                    <div class="g-19_ponto-botoes">
+                        <button class="g-19_ponto-botao-verde" type="button">Consultar orientações<img class="g-19_ponto-botao-seta" src="img/icon_seta-para-cima-direita-branca.png" alt=""></button>
+                        <button class="g-19_ponto-botao-branco" type="button">Abrir rota<img class="g-19_ponto-botao-seta" src="img/icon_seta-para-cima-direita.png" alt=""></button>
+                    </div>
+                </div>
+                <img class="g-19_mapa" src="img/mapa_03.png" alt="Mapa ilustrativo da EcoEstação Ibura">
+            </div>
+        </section>
+
+        <!-- GUIA DE DESCARTE -->
+        <section class="g-20_guia">
+            <p class="g-20_guia-eyebrow">GUIA DE DESCARTE</p>
+            <h2 class="g-20_guia-titulo">Cada resíduo tem o seu caminho.</h2>
+            <p class="g-20_guia-texto">Separe os materiais em casa e evite que eles cheguem às ruas, aos bueiros e aos canais.</p>
+
+            <div class="g-20_linha-1">
+                <div class="g-20_card">
+                    <div class="g-20_card-topo">
+                        <div class="g-20_card-icone"><img class="g-20_card-icone-img" src="img/icon_lixeira.png" alt=""></div>
+                        <h3 class="g-20_card-titulo">Resíduos domésticos</h3>
+                    </div>
+                    <p class="g-20_card-texto">Coloque os rejeitos em sacos bem fechados.<br>Separe os recicláveis antes de descartar.</p>
+                    <div class="g-20_card-destino">
+                        <p class="g-20_card-destino-label">DESTINO</p>
+                        <p class="g-20_card-destino-texto">Coleta domiciliar, no dia e horário da rua</p>
+                    </div>
+                </div>
+                <div class="g-20_card">
+                    <div class="g-20_card-topo">
+                        <div class="g-20_card-icone"><img class="g-20_card-icone-img" src="img/icon_reciclaveis.png" alt=""></div>
+                        <h3 class="g-20_card-titulo">Recicláveis</h3>
+                    </div>
+                    <p class="g-20_card-texto">Separe papel, plástico, metal e vidro.<br>Mantenha as embalagens limpas e secas.</p>
+                    <div class="g-20_card-destino">
+                        <p class="g-20_card-destino-label">DESTINO</p>
+                        <p class="g-20_card-destino-texto">Coleta seletiva ou ponto de recebimento</p>
+                    </div>
+                </div>
+                <div class="g-20_card">
+                    <div class="g-20_card-topo">
+                        <div class="g-20_card-icone"><img class="g-20_card-icone-img" src="img/icon_entulho.png" alt=""></div>
+                        <h3 class="g-20_card-titulo">Entulho de pequenas obras</h3>
+                    </div>
+                    <p class="g-20_card-texto">Não deixe restos de obra na calçada.<br>Confirme os limites de entrega do ponto.</p>
+                    <div class="g-20_card-destino">
+                        <p class="g-20_card-destino-label">DESTINO</p>
+                        <p class="g-20_card-destino-texto">Ponto autorizado para receber entulho</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-20_linha-2">
+                <div class="g-20_card">
+                    <div class="g-20_card-topo">
+                        <div class="g-20_card-icone"><img class="g-20_card-icone-img" src="img/icon_sofa.png" alt=""></div>
+                        <h3 class="g-20_card-titulo">Móveis e volumosos</h3>
+                    </div>
+                    <p class="g-20_card-texto">Não abandone sofás, colchões e móveis.<br>Consulte a destinação antes de transportar.</p>
+                    <div class="g-20_card-destino">
+                        <p class="g-20_card-destino-label">DESTINO</p>
+                        <p class="g-20_card-destino-texto">Recolhimento ou ponto autorizado</p>
+                    </div>
+                </div>
+                <div class="g-20_card">
+                    <div class="g-20_card-topo">
+                        <div class="g-20_card-icone"><img class="g-20_card-icone-img" src="img/icon_eletronicos.png" alt=""></div>
+                        <h3 class="g-20_card-titulo">Eletrônicos e pilhas</h3>
+                    </div>
+                    <p class="g-20_card-texto">Separe dos resíduos domésticos. Procure<br>um ponto específico para esse material.</p>
+                    <div class="g-20_card-destino">
+                        <p class="g-20_card-destino-label">DESTINO</p>
+                        <p class="g-20_card-destino-texto">Logística reversa ou ponto especializado</p>
+                    </div>
+                </div>
+                <div class="g-20_card">
+                    <div class="g-20_card-topo">
+                        <div class="g-20_card-icone"><img class="g-20_card-icone-img" src="img/icon_oleo.png" alt=""></div>
+                        <h3 class="g-20_card-titulo">Óleo de cozinha usado</h3>
+                    </div>
+                    <p class="g-20_card-texto">Espere esfriar e guarde em garrafa fechada.<br>Nunca despeje na pia, no solo ou no canal.</p>
+                    <div class="g-20_card-destino">
+                        <p class="g-20_card-destino-label">DESTINO</p>
+                        <p class="g-20_card-destino-texto">Ponto de recebimento de óleo usado</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="g-20_guia-aviso">Não misture produtos químicos, pilhas ou eletrônicos aos resíduos da coleta comum.</p>
+        </section>
+
+        <!-- DÚVIDAS -->
+        <section class="g-21_duvidas">
+            <div class="g-21_duvidas-esquerda">
+                <p class="g-21_duvidas-eyebrow">AINDA TEM DÚVIDAS?</p>
+                <h2 class="g-21_duvidas-titulo">Descarte consciente,<br>sem complicação.</h2>
+                <p class="g-21_duvidas-texto">Informação clara para ajudar<br>você a fazer a escolha certa.</p>
+            </div>
+            <div class="g-21_duvidas-direita">
+                <div class="g-21_faq-item">
+                    <h3 class="g-21_faq-pergunta">A EcoEstação recebe qualquer tipo de resíduo?</h3>
+                    <p class="g-21_faq-resposta">Não. Confirme os materiais aceitos e os limites de entrega com a Emlurb.<br>Pilhas, eletrônicos e produtos químicos exigem destinação específica.</p>
+                </div>
+                <div class="g-21_faq-item">
+                    <h3 class="g-21_faq-pergunta">Posso colocar o lixo na rua a qualquer hora?</h3>
+                    <p class="g-21_faq-resposta">Coloque os sacos próximos do horário previsto para a coleta da sua rua.<br>Isso reduz o mau cheiro, a presença de animais e o lixo espalhado.</p>
+                </div>
+                <div class="g-21_faq-ultimo">
+                    <h3 class="g-21_faq-pergunta">O que fazer se encontrar resíduos em um canal?</h3>
+                    <p class="g-21_faq-resposta">Registre uma denúncia e indique que o descarte está em um canal.<br>Não entre na água nem toque em materiais desconhecidos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="g-22_chamada">
+            <div>
+                <h2 class="g-22_chamada-titulo">Viu descarte irregular no bairro?</h2>
+                <p class="g-22_chamada-texto">Ajude a cuidar do Ibura: registre o local e acompanhe o atendimento.</p>
+            </div>
+            <button class="g-22_chamada-botao" type="button">Registrar uma denúncia<img class="g-22_chamada-botao-seta" src="img/icon_seta-direita.png" alt=""></button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="g-09_footer-colunas">
+            <div class="g-09_footer-marca">
+                <h2 class="g-09_footer-nome">LimpaIbura</h2>
+                <p class="g-09_footer-texto">Cuidar do bairro é um compromisso<br>de todos.</p>
+                <p class="g-09_footer-texto">Denúncia, informação e participação<br>para um Ibura mais limpo.</p>
+                <p class="g-09_footer-local">IBURA · RECIFE / PE</p>
+            </div>
+            <div class="g-09_footer-coluna-1">
+                <p class="g-09_footer-titulo">ACESSO RÁPIDO</p>
+                <a class="g-09_footer-link" href="index.html">Início</a>
+                <a class="g-09_footer-link" href="#">Fazer denúncia</a>
+                <a class="g-09_footer-link" href="#">Acompanhar protocolo</a>
+                <a class="g-09_footer-link" href="ocorrencias.html">Ocorrências do bairro</a>
+                <a class="g-09_footer-link" href="coleta_e_descarte.html">Coleta e Descarte</a>
+            </div>
+            <div class="g-09_footer-coluna-2">
+                <p class="g-09_footer-titulo">O PROJETO</p>
+                <a class="g-09_footer-link" href="#">Sobre o projeto</a>
+                <a class="g-09_footer-link" href="#">Privacidade</a>
+                <a class="g-09_footer-link" href="#">Acessibilidade</a>
+            </div>
+            <div class="g-09_footer-coluna-3">
+                <p class="g-09_footer-titulo">INFORMAÇÕES ÚTEIS</p>
+                <p class="g-09_footer-destaque">EcoEstação Ibura</p>
+                <p class="g-09_footer-endereco">Rua Rio Tapado<br>Ibura, Recife / PE</p>
+            </div>
+        </div>
+        <hr class="g-09_footer-linha">
+        <div class="g-09_footer-base">
+            <p class="g-09_footer-base-texto">Projeto acadêmico</p>
+            <p class="g-09_footer-base-texto">Por um Ibura melhor para todos!</p>
+        </div>
+    </footer>
 </body>
 </html>

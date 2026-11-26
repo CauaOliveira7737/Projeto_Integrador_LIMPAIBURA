@@ -75,6 +75,7 @@ nav{
     flex-direction: row;
     list-style: none;
     gap: 44px;
+    align-items: center;
 }
 .g-02_header-navegacao{
     display: flex;
@@ -82,6 +83,7 @@ nav{
     font-size: 14px;
     color: #5C6B62;
     font-weight: 400;
+    height: 40px;
 }
 .g-02_header-navegacao-ativo{
     display: flex;
@@ -90,6 +92,7 @@ nav{
     color: #1B4332;
     font-weight: 600;
     border-bottom: 2px solid #23704E;
+    height: 40px;
 }
 .g-03_header-botao{
     width: max-content;
@@ -1176,6 +1179,950 @@ footer{
     font-weight: 600;
 }
 .g-14_consulta-botao-seta{
+    width: 16px;
+    height: 16px;
+}
+
+/* ===================================================== */
+/* ======= PÁGINAS: LOGIN, CADASTRO E COLETA/DESCARTE ==== */
+/* ===================================================== */
+
+/* ===== 15 - LOGIN ===== */
+.g-15_login{
+    display: flex;
+    height: 840px;
+    background-color: #FFFFFF;
+}
+.g-15_login-imagem{
+    width: 688px;
+    height: 840px;
+    border-radius: 0px 100px 100px 0px;
+    box-shadow: 4px 0px 10px #E3E8E2;
+}
+.g-15_login-form{
+    width: 480px;
+    margin-left: 113px;
+    align-self: center;
+}
+.g-15_voltar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+}
+.g-15_voltar-seta{
+    width: 14px;
+    height: 14px;
+}
+.g-15_voltar-texto{
+    font-size: 14px;
+    font-weight: 500;
+    color: #23704E;
+}
+.g-15_titulo{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #1B4332;
+    margin-top: 50px;
+}
+.g-15_subtitulo{
+    font-size: 15px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 8px;
+}
+.g-15_label-email{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 28px;
+}
+.g-15_label-senha{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 20px;
+}
+.g-15_input{
+    display: block;
+    width: 480px;
+    height: 51px;
+    padding: 0px 18px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #1B4332;
+}
+.g-15_senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    height: 51px;
+    padding: 0px 20px 0px 18px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+}
+.g-15_senha-input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #1B4332;
+}
+.g-15_senha-icone{
+    width: 20px;
+    height: 20px;
+}
+.g-15_opcoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+    padding-right: 29px;
+}
+.g-15_manter{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.g-15_manter-caixa{
+    width: 18px;
+    height: 18px;
+}
+.g-15_manter-texto{
+    font-size: 14px;
+    color: #5C6B62;
+}
+.g-15_esqueci{
+    font-size: 14px;
+    font-weight: 600;
+    color: #23704E;
+}
+.g-15_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 480px;
+    height: 52px;
+    margin-top: 25px;
+    background-color: #23704E;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.g-15_botao-seta{
+    width: 16px;
+    height: 16px;
+}
+.g-15_cadastro{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-right: 67px;
+}
+.g-15_cadastro-texto{
+    font-size: 15px;
+    line-height: 20px;
+    color: #5C6B62;
+}
+.g-15_cadastro-link{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #23704E;
+}
+.g-15_linha{
+    width: 480px;
+    border: none;
+    border-top: 1px solid #DCE5DB;
+    margin-top: 31px;
+}
+.g-15_consulta-titulo{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 24px;
+}
+.g-15_consulta-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    margin-top: 9px;
+}
+.g-15_consulta-link-texto{
+    font-size: 14px;
+    line-height: 20px;
+    color: #23704E;
+}
+.g-15_consulta-link-seta{
+    width: 14px;
+    height: 14px;
+}
+
+/* ===== 16 - CADASTRO ===== */
+.g-16_cadastro{
+    display: flex;
+    height: 840px;
+    background-color: #FFFFFF;
+}
+.g-16_cadastro-imagem{
+    width: 688px;
+    height: 840px;
+    border-radius: 0px 100px 100px 0px;
+    box-shadow: 4px 0px 10px #E3E8E2;
+}
+.g-16_form{
+    width: 480px;
+    margin-left: 113px;
+    padding-top: 47px;
+}
+.g-16_voltar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+}
+.g-16_voltar-seta{
+    width: 14px;
+    height: 14px;
+}
+.g-16_voltar-texto{
+    font-size: 14px;
+    font-weight: 500;
+    color: #23704E;
+}
+.g-16_titulo{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #1B4332;
+    margin-top: 18px;
+}
+.g-16_subtitulo{
+    font-size: 15px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 11px;
+}
+.g-16_label-nome{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 10px;
+}
+.g-16_label-tipo{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 15px;
+}
+.g-16_label-senha{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 14px;
+}
+.g-16_label-confirmar{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 14px;
+}
+.g-16_input-nome{
+    display: block;
+    width: 480px;
+    height: 47px;
+    padding: 0px 18px;
+    margin-top: 7px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #1B4332;
+}
+.g-16_abas{
+    display: flex;
+    width: 480px;
+    height: 31px;
+    padding: 2px;
+    margin-top: 10px;
+    background-color: #EEF3EC;
+    border-radius: 8px;
+}
+.g-16_aba-ativa{
+    width: 238px;
+    height: 27px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #23704E;
+}
+.g-16_aba{
+    width: 238px;
+    height: 27px;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    color: #5C6B62;
+}
+.g-16_input-contato{
+    display: block;
+    width: 480px;
+    height: 47px;
+    padding: 0px 18px;
+    margin-top: 11px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #1B4332;
+}
+.g-16_senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    height: 47px;
+    padding: 0px 20px 0px 18px;
+    margin-top: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+}
+.g-16_senha-input{
+    width: 380px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #1B4332;
+}
+.g-16_senha-icone{
+    width: 20px;
+    height: 20px;
+}
+.g-16_ajuda{
+    font-size: 12px;
+    line-height: 14px;
+    color: #5C6B62;
+    margin-top: 8px;
+}
+.g-16_check-termos{
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin-top: 14px;
+}
+.g-16_check-novidades{
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin-top: 11px;
+}
+.g-16_check-caixa{
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+}
+.g-16_check-texto-verde{
+    font-size: 13px;
+    line-height: 20px;
+    color: #23704E;
+}
+.g-16_check-texto{
+    font-size: 13px;
+    line-height: 20px;
+    color: #5C6B62;
+}
+.g-16_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 480px;
+    height: 48px;
+    margin-top: 17px;
+    background-color: #23704E;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.g-16_botao-seta{
+    width: 16px;
+    height: 16px;
+}
+.g-16_entrar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+    padding-right: 15px;
+}
+.g-16_entrar-texto{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5C6B62;
+}
+.g-16_entrar-link{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #23704E;
+}
+
+/* ===== 17 - COLETA E DESCARTE: TÍTULO ===== */
+.g-17_titulo{
+    background-color: #EEF3EC;
+    padding: 26px 80px 29px 80px;
+}
+.g-17_titulo-caminho{
+    font-size: 12px;
+    color: #5C6B62;
+}
+.g-17_titulo-h1{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 46px;
+    color: #1B4332;
+    margin-top: 19px;
+}
+.g-17_titulo-texto{
+    font-size: 16px;
+    line-height: 24px;
+    color: #5C6B62;
+    margin-top: 22px;
+}
+.g-17_titulo-info{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 27px;
+}
+.g-17_titulo-selo{
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 0px 16px;
+    background-color: #DCEADB;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #23704E;
+}
+.g-17_titulo-info-texto{
+    font-size: 13px;
+    color: #5C6B62;
+}
+
+/* ===== 18 - COLETA E DESCARTE: CONSULTAR COLETA ===== */
+.g-18_consulta{
+    display: flex;
+    gap: 22px;
+    padding: 40px 80px 44px 80px;
+    background-color: #FFFFFF;
+}
+.g-18_busca-card{
+    width: 775px;
+    height: 331px;
+    padding: 26px 27px 27px 27px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+}
+.g-18_busca-titulo-linha{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.g-18_busca-titulo-icone{
+    width: 24px;
+    height: 24px;
+}
+.g-18_busca-titulo{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #1B4332;
+}
+.g-18_busca-texto{
+    font-size: 15px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 16px;
+}
+.g-18_busca-label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 20px;
+}
+.g-18_busca-linha{
+    display: flex;
+    gap: 16px;
+    margin-top: 11px;
+}
+.g-18_busca-caixa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 503px;
+    height: 50px;
+    padding: 0px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+}
+.g-18_busca-caixa-icone{
+    width: 16px;
+    height: 16px;
+}
+.g-18_busca-caixa-input{
+    width: 440px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #1B4332;
+}
+.g-18_busca-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+    height: 50px;
+    background-color: #23704E;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.g-18_busca-botao-seta{
+    width: 14px;
+    height: 14px;
+}
+.g-18_busca-exemplos{
+    font-size: 13px;
+    line-height: 18px;
+    color: #5C6B62;
+    margin-top: 15px;
+}
+.g-18_busca-aviso{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #E6ECE5;
+}
+.g-18_busca-aviso-icone{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+.g-18_busca-aviso-texto{
+    font-size: 13px;
+    line-height: 20px;
+    color: #5C6B62;
+}
+.g-18_cuidados-card{
+    width: 483px;
+    height: 331px;
+    padding: 25px 24px;
+    background-color: #EEF3EC;
+    border-radius: 10px;
+}
+.g-18_cuidados-label{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #23704E;
+}
+.g-18_cuidados-titulo{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #1B4332;
+    margin-top: 17px;
+}
+.g-18_cuidados-lista{
+    margin-top: 23px;
+}
+.g-18_cuidado{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 23px;
+}
+.g-18_cuidado-icone{
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+}
+.g-18_cuidado-titulo{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1B4332;
+}
+.g-18_cuidado-texto{
+    font-size: 13px;
+    line-height: 20px;
+    color: #5C6B62;
+    margin-top: 4px;
+}
+
+/* ===== 19 - COLETA E DESCARTE: PONTOS DE DESCARTE ===== */
+.g-19_pontos{
+    background-color: #F6F8F4;
+    padding: 30px 80px 48px 80px;
+}
+.g-19_pontos-eyebrow{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #23704E;
+    margin-bottom: 14px;
+}
+.g-19_pontos-titulo{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #1B4332;
+}
+.g-19_pontos-texto{
+    font-size: 15px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 13px;
+}
+.g-19_filtro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.g-19_filtro-esquerda{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.g-19_filtro-label{
+    font-size: 13px;
+    color: #5C6B62;
+    margin-right: 51px;
+}
+.g-19_chip-ativo{
+    height: 33px;
+    padding: 0px 20px;
+    background-color: #23704E;
+    border: 1px solid #23704E;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.g-19_chip{
+    height: 33px;
+    padding: 0px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #1B4332;
+}
+.g-19_filtro-total{
+    font-size: 13px;
+    color: #5C6B62;
+    margin-right: 83px;
+}
+.g-19_cards{
+    display: flex;
+    gap: 24px;
+    margin-top: 22px;
+}
+.g-19_ponto{
+    width: 625px;
+    height: 283px;
+    padding: 22px 26px 19px 26px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+}
+.g-19_ponto-label{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #23704E;
+}
+.g-19_ponto-titulo{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #1B4332;
+    margin-top: 17px;
+}
+.g-19_ponto-endereco{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5C6B62;
+    margin-top: 12px;
+}
+.g-19_ponto-antes{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #1B4332;
+    margin-top: 19px;
+}
+.g-19_ponto-texto{
+    font-size: 14px;
+    line-height: 24px;
+    color: #5C6B62;
+    margin-top: 8px;
+}
+.g-19_ponto-botoes{
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+.g-19_ponto-botao-verde{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0px 16px;
+    background-color: #23704E;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.g-19_ponto-botao-branco{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1B4332;
+}
+.g-19_ponto-botao-seta{
+    width: 14px;
+    height: 14px;
+}
+.g-19_mapa{
+    width: 634px;
+    height: 283px;
+    border-radius: 10px;
+}
+
+/* ===== 20 - COLETA E DESCARTE: GUIA DE DESCARTE ===== */
+.g-20_guia{
+    background-color: #FFFFFF;
+    padding: 35px 80px 20px 80px;
+}
+.g-20_guia-eyebrow{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #23704E;
+    margin-bottom: 16px;
+}
+.g-20_guia-titulo{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    color: #1B4332;
+}
+.g-20_guia-texto{
+    font-size: 15px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 10px;
+}
+.g-20_linha-1{
+    display: flex;
+    gap: 25px;
+    margin-top: 24px;
+}
+.g-20_linha-2{
+    display: flex;
+    gap: 25px;
+    margin-top: 18px;
+}
+.g-20_card{
+    width: 410px;
+    height: 213px;
+    padding: 22px 22px 15px 22px;
+    background-color: #FFFFFF;
+    border: 1px solid #DCE5DB;
+    border-radius: 10px;
+}
+.g-20_card-topo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.g-20_card-icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #EEF3EC;
+    border-radius: 8px;
+}
+.g-20_card-icone-img{
+    width: 20px;
+    height: 20px;
+}
+.g-20_card-titulo{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1B4332;
+}
+.g-20_card-texto{
+    font-size: 14px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 22px;
+}
+.g-20_card-destino{
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #E6ECE5;
+}
+.g-20_card-destino-label{
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #5C6B62;
+}
+.g-20_card-destino-texto{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #23704E;
+    margin-top: 4px;
+}
+.g-20_guia-aviso{
+    font-size: 13px;
+    line-height: 18px;
+    color: #5C6B62;
+    margin-top: 20px;
+}
+
+/* ===== 21 - COLETA E DESCARTE: DÚVIDAS ===== */
+.g-21_duvidas{
+    display: flex;
+    background-color: #F6F8F4;
+    padding: 19px 80px 23px 80px;
+}
+.g-21_duvidas-esquerda{
+    width: 481px;
+}
+.g-21_duvidas-eyebrow{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #23704E;
+    margin-top: 24px;
+}
+.g-21_duvidas-titulo{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #1B4332;
+    margin-top: 23px;
+}
+.g-21_duvidas-texto{
+    font-size: 15px;
+    line-height: 26px;
+    color: #5C6B62;
+    margin-top: 22px;
+}
+.g-21_duvidas-direita{
+    width: 799px;
+}
+.g-21_faq-item{
+    padding: 14px 0px;
+    border-bottom: 1px solid #DCE5DB;
+}
+.g-21_faq-ultimo{
+    padding: 14px 0px;
+}
+.g-21_faq-pergunta{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #1B4332;
+}
+.g-21_faq-resposta{
+    font-size: 14px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 6px;
+}
+
+/* ===== 22 - COLETA E DESCARTE: CHAMADA FINAL ===== */
+.g-22_chamada{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEF3EC;
+    padding: 46px 50px 47px 80px;
+}
+.g-22_chamada-titulo{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #1B4332;
+}
+.g-22_chamada-texto{
+    font-size: 15px;
+    line-height: 22px;
+    color: #5C6B62;
+    margin-top: 19px;
+}
+.g-22_chamada-botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    height: 50px;
+    background-color: #23704E;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.g-22_chamada-botao-seta{
     width: 16px;
     height: 16px;
 }

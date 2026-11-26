@@ -3,9 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LimpaIbura - Ocorrências</title>
 </head>
 <body>
-    
+    <header>
+        <div class="g-01_header">
+            <div class="g-01_header-icon">
+                <img class="g-01_header-icon-img" src="img/icon_local.png" alt="">
+            </div>
+            <div class="g-01_header-text">
+                <h1 class="h1_header-text">LimpaIbura</h1>
+                <p class="p_header-text">CUIDADO QUE COMEÇA AQUI</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="g-02_header">
+                <li class="g-02_header-navegacao"><a href="index.html">Início</a></li>
+                <li class="g-02_header-navegacao-ativo"><a href="ocorrencias.html">Ocorrências</a></li>
+                <li class="g-02_header-navegacao"><a href="coleta_e_descarte.html">Coleta e descarte</a></li>
+            </ul>
+        </nav>
+
+        <div class="g-03_header-botao">
+            <a href="login.html" class="g-03_header-botao-entrar" type="button">Entrar</a>
+            <button class="g-03_header-botao-fazerdenuncia" type="button">Fazer denúncia</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="g-10_titulo">
+            <p class="g-10_titulo-caminho">Início / Ocorrências</p>
+            <h1 class="g-10_titulo-h1">O que acontece no nosso bairro.</h1>
+            <p class="g-10_titulo-texto">Consulte os registros de descarte irregular e acompanhe cada etapa do atendimento.</p>
+            <div class="g-10_titulo-info">
+                <p class="g-10_titulo-selo">MAPA PÚBLICO</p>
+                <p class="g-10_titulo-info-texto">Sem dados pessoais. Com mais transparência.</p>
+            </div>
+        </section>
+
+        <section class="g-11_conteudo">
+            <p class="g-11_aviso">Ambiente demonstrativo · Os registros são fictícios e o mapa é esquemático, sem precisão geográfica.</p>
+
+            <!-- FILTROS -->
+            <div class="g-11_filtros">
+                <div>
+                    <p class="g-11_filtro-label">Buscar local ou protocolo</p>
+                    <div class="g-11_filtro-busca">
+                        <img class="g-11_filtro-busca-icone" src="img/icon_lupa.png" alt="">
+                        <input class="g-11_filtro-busca-input" type="search" placeholder="Rua, localidade ou nº de protocolo">
+                    </div>
+                </div>
+                <div>
+                    <p class="g-11_filtro-label">Status</p>
+                    <select class="g-11_filtro-status">
+                        <option>Todos os status</option>
+                        <option>Recebida</option>
+                        <option>Em análise</option>
+                        <option>Em atendimento</option>
+                        <option>Resolvida</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="g-11_filtro-label">Tipo de resíduo</p>
+                    <select class="g-11_filtro-tipo">
+                        <option>Todos os tipos</option>
+                        <option>Resíduos em canal</option>
+                        <option>Descarte em via pública</option>
+                        <option>Descarte de móveis</option>
+                        <option>Resíduos domésticos</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="g-11_filtro-label">Período</p>
+                    <select class="g-11_filtro-periodo">
+                        <option>Últimos 30 dias</option>
+                        <option>Últimos 7 dias</option>
+                        <option>Últimos 90 dias</option>
+                    </select>
+                </div>
+                <button class="g-11_filtro-limpar" type="button">Limpar</button>
+            </div>
+
+            <!-- MAPA -->
+            <div class="g-12_topo">
+                <p class="g-12_topo-total">6 ocorrências de exemplo no Ibura</p>
+                <p class="g-12_topo-dica">Selecione um ponto para ver os detalhes</p>
+            </div>
+
+            <div class="g-12_area">
+                <div class="g-12_esquerda">
+                    <img class="g-12_mapa" src="img/mapa_02.png" alt="Mapa ilustrativo das ocorrências do Ibura">
+                    <div class="g-12_legenda">
+                        <div class="g-12_legenda-item">
+                            <div class="g-12_ponto-recebida"></div>
+                            <p class="g-12_legenda-texto">Recebida</p>
+                        </div>
+                        <div class="g-12_legenda-item">
+                            <div class="g-12_ponto-analise"></div>
+                            <p class="g-12_legenda-texto">Em análise</p>
+                        </div>
+                        <div class="g-12_legenda-item">
+                            <div class="g-12_ponto-atendimento"></div>
+                            <p class="g-12_legenda-texto">Em atendimento</p>
+                        </div>
+                        <div class="g-12_legenda-item">
+                            <div class="g-12_ponto-resolvida"></div>
+                            <p class="g-12_legenda-texto">Resolvida</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g-12_direita">
+                    <div class="g-12_detalhe">
+                        <p class="g-12_detalhe-protocolo">#IB-2026-0142</p>
+                        <p class="g-12_detalhe-status">Em atendimento</p>
+                        <h2 class="g-12_detalhe-titulo">Resíduos próximos<br>ao canal</h2>
+                        <p class="g-12_detalhe-local">Canal Três Carneiros · Ibura</p>
+                        <p class="g-12_detalhe-tipo">Resíduos em canal · Prioridade alta</p>
+
+                        <div class="g-12_andamento">
+                            <p class="g-12_andamento-titulo">ANDAMENTO</p>
+                            <div class="g-12_etapa">
+                                <div class="g-12_etapa-marcador">
+                                    <div class="g-12_etapa-ponto-verde"></div>
+                                    <div class="g-12_etapa-linha"></div>
+                                </div>
+                                <div class="g-12_etapa-texto">
+                                    <p class="g-12_etapa-nome">Recebida</p>
+                                    <p class="g-12_etapa-data">19 nov. · 08:42</p>
+                                </div>
+                            </div>
+                            <div class="g-12_etapa">
+                                <div class="g-12_etapa-marcador">
+                                    <div class="g-12_etapa-ponto-verde"></div>
+                                    <div class="g-12_etapa-linha"></div>
+                                </div>
+                                <div class="g-12_etapa-texto">
+                                    <p class="g-12_etapa-nome">Em análise</p>
+                                    <p class="g-12_etapa-data">19 nov. · 10:15</p>
+                                </div>
+                            </div>
+                            <div class="g-12_etapa">
+                                <div class="g-12_etapa-marcador">
+                                    <div class="g-12_etapa-ponto-azul"></div>
+                                </div>
+                                <div class="g-12_etapa-texto">
+                                    <p class="g-12_etapa-nome">Em atendimento</p>
+                                    <p class="g-12_etapa-data">20 nov. · 09:30</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="g-12_historico">
+                            <p class="g-12_historico-texto">Ver histórico completo</p>
+                            <img class="g-12_historico-seta" src="img/icon_seta-direita-verde_claro.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="g-12_identidade">
+                        <img class="g-12_identidade-icone" src="img/icon_seguranca.png" alt="">
+                        <p class="g-12_identidade-texto">Identidade do denunciante protegida</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTA DE OCORRÊNCIAS -->
+            <div class="g-13_topo">
+                <div>
+                    <h2 class="g-13_topo-titulo">Ocorrências do bairro</h2>
+                    <p class="g-13_topo-texto">Acompanhe os registros e a situação de cada local.</p>
+                </div>
+                <select class="g-13_topo-ordenar">
+                    <option>Ordenar por: mais recentes</option>
+                    <option>Ordenar por: mais antigas</option>
+                </select>
+            </div>
+
+            <div class="g-13_tabela">
+                <div class="g-13_cabecalho">
+                    <p class="g-13_cab-1">PROTOCOLO</p>
+                    <p class="g-13_cab-2">OCORRÊNCIA / LOCAL</p>
+                    <p class="g-13_cab-3">REGISTRADA EM</p>
+                    <p class="g-13_cab-4">STATUS</p>
+                    <p class="g-13_cab-5">PRIORIDADE</p>
+                </div>
+
+                <div class="g-13_linha">
+                    <p class="g-13_col-protocolo">#IB-2026-0142</p>
+                    <div class="g-13_col-ocorrencia">
+                        <p class="g-13_ocorrencia-titulo">Resíduos próximos ao canal</p>
+                        <p class="g-13_ocorrencia-local">Canal Três Carneiros</p>
+                    </div>
+                    <p class="g-13_col-data">19 nov. 2026</p>
+                    <div class="g-13_col-status">
+                        <p class="g-13_status-atendimento">Em atendimento</p>
+                    </div>
+                    <p class="g-13_col-prioridade-alta">Alta</p>
+                    <img class="g-13_col-seta" src="img/icon_seta-para-cima-direita.png" alt="">
+                </div>
+
+                <div class="g-13_linha">
+                    <p class="g-13_col-protocolo">#IB-2026-0141</p>
+                    <div class="g-13_col-ocorrencia">
+                        <p class="g-13_ocorrencia-titulo">Descarte em via pública</p>
+                        <p class="g-13_ocorrencia-local">Rua Rio Prado</p>
+                    </div>
+                    <p class="g-13_col-data">18 nov. 2026</p>
+                    <div class="g-13_col-status">
+                        <p class="g-13_status-analise">Em análise</p>
+                    </div>
+                    <p class="g-13_col-prioridade-normal">Normal</p>
+                    <img class="g-13_col-seta" src="img/icon_seta-para-cima-direita.png" alt="">
+                </div>
+
+                <div class="g-13_linha">
+                    <p class="g-13_col-protocolo">#IB-2026-0140</p>
+                    <div class="g-13_col-ocorrencia">
+                        <p class="g-13_ocorrencia-titulo">Acúmulo de resíduos na calçada</p>
+                        <p class="g-13_ocorrencia-local">Rua Rio Tapado</p>
+                    </div>
+                    <p class="g-13_col-data">17 nov. 2026</p>
+                    <div class="g-13_col-status">
+                        <p class="g-13_status-resolvida">Resolvida</p>
+                    </div>
+                    <p class="g-13_col-prioridade-normal">Normal</p>
+                    <img class="g-13_col-seta" src="img/icon_seta-para-cima-direita.png" alt="">
+                </div>
+
+                <div class="g-13_linha">
+                    <p class="g-13_col-protocolo">#IB-2026-0139</p>
+                    <div class="g-13_col-ocorrencia">
+                        <p class="g-13_ocorrencia-titulo">Descarte de móveis</p>
+                        <p class="g-13_ocorrencia-local">UR-2 · Ibura</p>
+                    </div>
+                    <p class="g-13_col-data">16 nov. 2026</p>
+                    <div class="g-13_col-status">
+                        <p class="g-13_status-recebida">Recebida</p>
+                    </div>
+                    <p class="g-13_col-prioridade-normal">Normal</p>
+                    <img class="g-13_col-seta" src="img/icon_seta-para-cima-direita.png" alt="">
+                </div>
+
+                <div class="g-13_linha">
+                    <p class="g-13_col-protocolo">#IB-2026-0138</p>
+                    <div class="g-13_col-ocorrencia">
+                        <p class="g-13_ocorrencia-titulo">Resíduos junto ao canal</p>
+                        <p class="g-13_ocorrencia-local">Três Carneiros · Ibura</p>
+                    </div>
+                    <p class="g-13_col-data">15 nov. 2026</p>
+                    <div class="g-13_col-status">
+                        <p class="g-13_status-analise">Em análise</p>
+                    </div>
+                    <p class="g-13_col-prioridade-alta">Alta</p>
+                    <img class="g-13_col-seta" src="img/icon_seta-para-cima-direita.png" alt="">
+                </div>
+
+                <div class="g-13_linha-ultima">
+                    <p class="g-13_col-protocolo">#IB-2026-0137</p>
+                    <div class="g-13_col-ocorrencia">
+                        <p class="g-13_ocorrencia-titulo">Descarte de resíduos domésticos</p>
+                        <p class="g-13_ocorrencia-local">UR-1 · Ibura</p>
+                    </div>
+                    <p class="g-13_col-data">14 nov. 2026</p>
+                    <div class="g-13_col-status">
+                        <p class="g-13_status-resolvida">Resolvida</p>
+                    </div>
+                    <p class="g-13_col-prioridade-normal">Normal</p>
+                    <img class="g-13_col-seta" src="img/icon_seta-para-cima-direita.png" alt="">
+                </div>
+            </div>
+
+            <div class="g-13_rodape">
+                <p class="g-13_rodape-texto">Mostrando 1–6 de 6 ocorrências de exemplo</p>
+                <p class="g-13_rodape-pagina">1</p>
+            </div>
+
+            <!-- CONSULTAR PROTOCOLO -->
+            <div class="g-14_consulta">
+                <div class="g-14_consulta-texto">
+                    <h3 class="g-14_consulta-titulo">Já fez uma denúncia?</h3>
+                    <p class="g-14_consulta-descricao">Consulte o andamento usando o número do seu protocolo.</p>
+                </div>
+                <div class="g-14_consulta-form">
+                    <input class="g-14_consulta-input" type="text" placeholder="Ex.: IB-2026-0142">
+                    <div class="g-14_consulta-botao">
+                        <button class="g-14_consulta-botao-texto" type="button">Consultar</button>
+                        <img class="g-14_consulta-botao-seta" src="img/icon_seta-direita.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="g-09_footer-colunas">
+            <div class="g-09_footer-marca">
+                <h2 class="g-09_footer-nome">LimpaIbura</h2>
+                <p class="g-09_footer-texto">Cuidar do bairro é um compromisso<br>de todos.</p>
+                <p class="g-09_footer-texto">Denúncia, informação e participação<br>para um Ibura mais limpo.</p>
+                <p class="g-09_footer-local">IBURA · RECIFE / PE</p>
+            </div>
+            <div class="g-09_footer-coluna-1">
+                <p class="g-09_footer-titulo">ACESSO RÁPIDO</p>
+                <a class="g-09_footer-link" href="index.html">Início</a>
+                <a class="g-09_footer-link" href="#">Fazer denúncia</a>
+                <a class="g-09_footer-link" href="#">Acompanhar protocolo</a>
+                <a class="g-09_footer-link" href="ocorrencias.html">Ocorrências do bairro</a>
+                <a class="g-09_footer-link" href="coleta_e_descarte.html">Coleta e Descarte</a>
+            </div>
+            <div class="g-09_footer-coluna-2">
+                <p class="g-09_footer-titulo">O PROJETO</p>
+                <a class="g-09_footer-link" href="#">Sobre o projeto</a>
+                <a class="g-09_footer-link" href="#">Privacidade</a>
+                <a class="g-09_footer-link" href="#">Acessibilidade</a>
+            </div>
+            <div class="g-09_footer-coluna-3">
+                <p class="g-09_footer-titulo">INFORMAÇÕES ÚTEIS</p>
+                <p class="g-09_footer-destaque">EcoEstação Ibura</p>
+                <p class="g-09_footer-endereco">Rua Rio Tapado<br>Ibura, Recife / PE</p>
+            </div>
+        </div>
+        <hr class="g-09_footer-linha">
+        <div class="g-09_footer-base">
+            <p class="g-09_footer-base-texto">Projeto acadêmico</p>
+            <p class="g-09_footer-base-texto">Por um Ibura melhor para todos!</p>
+        </div>
+    </footer>
 </body>
 </html>
